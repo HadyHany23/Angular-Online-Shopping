@@ -1,0 +1,28 @@
+.login-box {
+  padding: 20px 0px;
+  margin: 40px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.user-box {
+  margin: 20px;
+}
+
+.user-box label {
+  margin-right: 10px;
+}
+
+.user-box input {
+  border-width: 0 0 2px 0;
+  outline: none;
+  width: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(38, 38, 109);
+  border-radius: 30px;
+  padding: 5px 20px;
+}

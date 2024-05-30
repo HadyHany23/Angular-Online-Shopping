@@ -1,0 +1,23 @@
+li {
+  /* float: left; */
+  padding-right: 30px;
+  cursor: pointer;
+  margin: auto;
+}
+
+li:last-child {
+  background-color: rgb(35, 35, 163);
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

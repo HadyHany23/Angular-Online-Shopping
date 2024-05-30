@@ -1,0 +1,22 @@
+.side-bar {
+  background-color: #222;
+  height: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+.side-bar a {
+  text-decoration: none;
+  background-color: grey;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 20px;
+}
+
+.side-bar li:not(:last-child) {
+  margin-bottom: 40px;
+}

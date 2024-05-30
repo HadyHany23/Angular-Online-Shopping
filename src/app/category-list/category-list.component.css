@@ -1,0 +1,14 @@
+section {
+    background-color: rgb(43, 43, 78);
+    padding: 40px;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  
+  .card {
+    padding: 20px;
+    margin: 40px auto;
+    text-align: center;
+  }
