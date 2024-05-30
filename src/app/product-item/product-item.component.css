@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .body {
@@ -11,22 +11,21 @@
   height: 100%;
 }
 
-.body div{
-  background-color: blue;
-  width: 100%;
-  height: 100%;
-}
-
-.body .item {
-  background-color: brown;
+.body .cont {
+  background-color: yellow;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-/* .body .product {
+.body .cont .card {
+  background-color: red;
+  margin: 10px;
+}
+
+/*
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-} */
+*/
 
 .side {
   width: 10%;
