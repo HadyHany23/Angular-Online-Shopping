@@ -1,42 +1,46 @@
+/* .cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+} */
+
 .card {
-  border: 1px black solid;
+  border: 3px black solid;
   padding: 5px;
   margin: 10px;
-  background-color: #777;
+  transition-duration: 1.5s;
+  box-shadow: 10px 10px 10px rgb(25, 25, 25);
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card .image {
   width: 100%;
-  text-align: center;
-  /* margin-bottom: 10px; */
+  margin: auto;
 }
 
 .card .image img {
   width: 100%;
-  /* border-radius: 10px; */
 }
 
 .card .prod-name {
   font-weight: bold;
-  /* margin-top: 20px; */
-  font-size: 35px;
+  font-size: 25px;
   text-align: center;
 }
 
 .card .prod-disc {
   text-wrap: wrap;
+  font-size: 15px;
+  padding-left: 5px;
 }
 
 .card .prod-price {
   text-align: center;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 25px;
 }
-
-/* .card hr {
-  margin: 10px 0;
-  width: 100%;
-  background-color: aqua;
-} */
 
 .card .buy-btn {
   text-align: center;
@@ -49,4 +53,5 @@
   border-radius: 20px;
   padding: 5px 20px;
   text-align: center;
+  width: 100%;
 }
