@@ -1,6 +1,6 @@
 .card {
   border: 1px black solid;
-  padding: 10px;
+  padding: 5px;
   margin: 10px;
   background-color: #777;
 }
@@ -8,17 +8,17 @@
 .card .image {
   width: 100%;
   text-align: center;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .card .image img {
-  width: 80%;
-  border-radius: 10px;
+  width: 100%;
+  /* border-radius: 10px; */
 }
 
 .card .prod-name {
   font-weight: bold;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-size: 35px;
   text-align: center;
 }
@@ -32,11 +32,11 @@
   font-size: 20px;
 }
 
-.card hr {
+/* .card hr {
   margin: 10px 0;
   width: 100%;
   background-color: aqua;
-}
+} */
 
 .card .buy-btn {
   text-align: center;
