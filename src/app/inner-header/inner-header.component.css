@@ -14,14 +14,13 @@
   border-radius: 20px;
   padding: 5px 20px;
   text-align: center;
-  transition-duration: 1.5s;
   height: fit-content;
-  box-shadow: 10px 10px 10px rgb(25, 25, 25);
+  box-shadow: 0 8px goldenrod;
+  text-transform: capitalize;
 }
 
 .nav a:first-child {
   margin-left: 11%;
-
 }
 
 .nav a:not(:last-child) {
@@ -29,8 +28,12 @@
 }
 
 .nav a:hover {
-  background-color: grey;
+  background-color: black;
   color: white;
   border: 2px solid goldenrod;
-  transform: rotate(360deg);
+}
+
+.nav a:active {
+  box-shadow: 0 4px goldenrod;
+  transform: translateY(4px);
 }

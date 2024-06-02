@@ -4,10 +4,10 @@
 } */
 
 .card {
-  border: 3px black solid;
+  border: 1px black solid;
   padding: 5px;
   margin: 10px;
-  transition-duration: 1.5s;
+  transition-duration: 1s;
   box-shadow: 10px 10px 10px rgb(25, 25, 25);
 }
 
