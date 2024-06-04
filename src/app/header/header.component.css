@@ -1,14 +1,19 @@
 li {
-  /* float: left; */
   padding-right: 30px;
   cursor: pointer;
   margin: auto;
 }
 
-li:last-child {
-  background-color: rgb(35, 35, 163);
+#login {
   border-radius: 30px;
-  padding: 5px 10px;
+  border: 1px solid white;
+  padding: 5px 50px;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+#login:hover {
+  background-color: goldenrod;
 }
 
 ul {

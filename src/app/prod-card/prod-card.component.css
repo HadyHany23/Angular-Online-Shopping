@@ -43,6 +43,19 @@
   padding-left: 5px;
 }
 
+.card .rate {
+  text-align: center;
+}
+
+.card .rate fa-icon {
+  padding: 0 5px;
+  color: goldenrod;
+}
+
+.card .rate fa-icon:last-child {
+  color: black;
+}
+
 .card .prod-price {
   text-align: center;
   font-weight: bold;
