@@ -7,7 +7,12 @@ import { InnerHeaderComponent } from '../inner-header/inner-header.component';
 @Component({
   selector: 'product-item',
   standalone: true,
-  imports: [RouterOutlet, ProdCardComponent,SideBarComponent,InnerHeaderComponent],
+  imports: [
+    RouterOutlet,
+    ProdCardComponent,
+    SideBarComponent,
+    InnerHeaderComponent,
+  ],
   templateUrl: './product-item.component.html',
   styleUrl: './product-item.component.css',
 })
