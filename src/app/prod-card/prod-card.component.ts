@@ -2,27 +2,27 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { DemoService } from '../services/demo.service';
 @Component({
   selector: 'app-prod-card',
   standalone: true,
-  imports: [FontAwesomeModule,CommonModule],
+  imports: [FontAwesomeModule, CommonModule],
   templateUrl: './prod-card.component.html',
+  providers: [DemoService],
   styleUrl: './prod-card.component.css',
 })
-export class ProdCardComponent{
+export class ProdCardComponent implements OnInit {
   faStar = faStar;
-  // value = 2.5; //addition of .5
-  // starList: string[] = [];
-  // ngOnInit() {
-  //   let i=1;
-  //   for(i=1; i<=5; i++) {
-  //     if(i<= this.value) {
-  //       this.starList.push("fas fa-star");
-  //     } else if(i <= this.value+0.5) {
-  //       this.starList.push("fas fa-star-half");
-  //     } else {
-  //       this.starList.push("far fa-star");
-  //     }
-  //   }
-  // }
+  public data: any;
+  constructor(private service: DemoService) {}
+
+  public fetchData() {
+    this.service.getall().subscribe((resp: any) => {
+      this.data = resp;
+    });
+  }
+
+  ngOnInit(): void {
+    this.fetchData();
+  }
 }

@@ -1,24 +1,30 @@
-<div class="card">
-  <div class="image">
-    <img src="../../assets/images/product-1.jpg" alt="" />
+<div class="row">
+  @for (prod of data; track $index) {
+  <div class="col-4">
+    <div class="card">
+      <div class="image">
+        <img src="../../assets/images/product-1.jpg" alt="" />
+      </div>
+      <div class="prod-name">
+        <p>Anker P25i</p>
+      </div>
+      <div class="prod-disc">
+        <p>Battery life 50H noise cancelation</p>
+      </div>
+      <div class="rate">
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar"></fa-icon>
+      </div>
+      <div class="prod-price">
+        <p>{{ prod.id + "$" }}</p>
+      </div>
+      <div class="buy-btn">
+        <button>Buy now</button>
+      </div>
+    </div>
   </div>
-  <div class="prod-name">
-    <p>Anker P25i</p>
-  </div>
-  <div class="prod-disc">
-    <p>Battery life 50H noise cancelation</p>
-  </div>
-  <div class="rate">
-    <fa-icon [icon]="faStar"></fa-icon>
-    <fa-icon [icon]="faStar"></fa-icon>
-    <fa-icon [icon]="faStar"></fa-icon>
-    <fa-icon [icon]="faStar"></fa-icon>
-    <fa-icon [icon]="faStar"></fa-icon>
-  </div>
-  <div class="prod-price">
-    <p>100$</p>
-  </div>
-  <div class="buy-btn">
-    <button>Buy now</button>
-  </div>
+  }
 </div>
