@@ -26,3 +26,18 @@ a {
   color: white;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 700px) {
+  #login:hover {
+    background-color: transparent;
+  }
+  #login {
+    border: none;
+    text-decoration: underline;
+    padding: 2px 4px;
+    color: white;
+  }
+  .container img {
+    display: none;
+  }
+}
