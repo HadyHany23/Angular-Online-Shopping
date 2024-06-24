@@ -13,6 +13,7 @@ import { DemoService } from '../services/demo.service';
 })
 export class ProdCardComponent implements OnInit {
   faStar = faStar;
+  
   public data: any;
   constructor(private service: DemoService) {}
 

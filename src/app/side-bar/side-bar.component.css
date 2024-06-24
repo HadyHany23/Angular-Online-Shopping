@@ -47,7 +47,7 @@
 }
 
 .side-bar a:hover::before {
-  width: 90%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -74,7 +74,7 @@
     box-shadow: none;
     overflow: hidden;
     position: relative;
-    font-size: 12px;
+    font-size: 14px;
   }
   .side-bar a:not(:last-child) {
     margin-bottom: 20px;

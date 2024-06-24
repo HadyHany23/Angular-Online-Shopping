@@ -1,9 +1,10 @@
 .nav {
-  height: 80px;
+  min-height: 80px;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-top: 30px;
 }
 
 .nav a {
@@ -19,10 +20,11 @@
   text-transform: capitalize;
   overflow: hidden;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .nav a:first-child {
-  margin-left: 11%;
+  margin-left: 12%;
 }
 
 .nav a:not(:last-child) {
@@ -49,16 +51,17 @@
 }
 
 .nav a:hover::before {
-  height: 90%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 700px) {
   .nav {
-    height: 40px;
+    min-height: 40px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 5px;
   }
   .nav a {
     text-decoration: none;
@@ -73,12 +76,11 @@
     text-transform: capitalize;
     overflow: hidden;
     position: relative;
-    font-size: 12px;
+    font-size: 14px;
   }
   .nav a:first-child {
-    margin-left: 5%;
+    margin-left: 0;
   }
-  
   .nav a:not(:last-child) {
     margin-right: 10px;
   }

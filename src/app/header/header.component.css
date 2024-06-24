@@ -22,12 +22,19 @@ ul {
   align-content: space-between;
 }
 
+ul li:not(:last-child) {
+  padding-right: 10px;
+}
+
 a {
   color: white;
   text-decoration: none;
 }
 
 @media only screen and (max-width: 700px) {
+  .container {
+    margin-left: -8%;
+  }
   #login:hover {
     background-color: transparent;
   }

@@ -1,6 +1,5 @@
-<div class="row">
+<div class="cont">
   @for (prod of data; track $index) {
-  <div class="col-4">
     <div class="card">
       <div class="image">
         <img src="../../assets/images/product-1.jpg" alt="" />
@@ -11,13 +10,13 @@
       <div class="prod-disc">
         <p>Battery life 50H noise cancelation</p>
       </div>
-      <div class="rate">
+      <!-- <div class="rate">
         <fa-icon [icon]="faStar"></fa-icon>
         <fa-icon [icon]="faStar"></fa-icon>
         <fa-icon [icon]="faStar"></fa-icon>
         <fa-icon [icon]="faStar"></fa-icon>
         <fa-icon [icon]="faStar"></fa-icon>
-      </div>
+      </div> -->
       <div class="prod-price">
         <p>{{ prod.id + "$" }}</p>
       </div>
@@ -25,6 +24,5 @@
         <button>Buy now</button>
       </div>
     </div>
-  </div>
   }
 </div>
